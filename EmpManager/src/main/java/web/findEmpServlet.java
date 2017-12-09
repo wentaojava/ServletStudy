@@ -21,6 +21,7 @@ public class findEmpServlet extends HttpServlet{
 		
 		response.setContentType("text/html;charset=utf-8");
 		PrintWriter p=response.getWriter();
+		p.println("<a href='addEmp.html'>ĞÂÔö</a>");
 		p.println("<table border='1' cellspacing='0' width='30%'>");
 		p.println("<tr>");
 		p.println("   <td>±àºÅ</td>");

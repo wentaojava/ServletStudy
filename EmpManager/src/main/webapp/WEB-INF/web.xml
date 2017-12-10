@@ -18,4 +18,14 @@
     <servlet-name>findEmpServlet</servlet-name>
     <url-pattern>/findEmpServlet</url-pattern>
    </servlet-mapping>
+   
+   <servlet>
+   <servlet-name>AddEmpServlet</servlet-name>
+   <servlet-class>web.AddEmpServlet</servlet-class>
+  </servlet>
+    <!--2.通过别名引用Servlet，并取个网名(以斜线开头)  -->
+   <servlet-mapping>
+    <servlet-name>AddEmpServlet</servlet-name>
+    <url-pattern>/AddEmpServlet</url-pattern>
+   </servlet-mapping>
 </web-app>

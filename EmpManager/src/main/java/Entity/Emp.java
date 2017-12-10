@@ -6,7 +6,7 @@ public class Emp implements Serializable {
 	private Integer empno;
 	private String name;
 	private String job;
-	private Double sal;
+	private float sal;
 	
 	public Integer getEmpno(){
 		return empno;
@@ -32,11 +32,11 @@ public class Emp implements Serializable {
 		this.job = job;
 	}
 
-	public Double getSal() {
+	public float getSal() {
 		return sal;
 	}
 
-	public void setSal(Double sal) {
+	public void setSal(float sal) {
 		this.sal = sal;
 	}
 

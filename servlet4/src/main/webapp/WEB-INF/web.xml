@@ -9,6 +9,7 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
   <servlet>
   	<servlet-name>demo</servlet-name>
   	<servlet-class>web.DemoServlet</servlet-class>
@@ -34,4 +35,27 @@
   	<servlet-name>login</servlet-name>
   	<url-pattern>/login</url-pattern>
   </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>findDept</servlet-name>
+  	<servlet-class>web.findDeptServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>findDept</servlet-name>
+  	<url-pattern>/findDept</url-pattern>
+  </servlet-mapping>
+   <servlet>
+  	<servlet-name>findEmp</servlet-name>
+  	<servlet-class>web.findEmpServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>findEmp</servlet-name>
+  	<url-pattern>/findEmp</url-pattern>
+  </servlet-mapping>
+  
+  <context-param>
+  	<param-name>size</param-name>
+  	<param-value>10</param-value>
+  </context-param>
+  
 </web-app>

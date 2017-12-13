@@ -14,7 +14,7 @@
   	<servlet-name>demo</servlet-name>
   	<servlet-class>web.DemoServlet</servlet-class>
   	<!--在启动服务器时第一个创建此servlet  -->
-  	<load-on-startup>1</load-on-startup>
+  	<load-on-startup>2</load-on-startup>
   </servlet>
   <servlet-mapping>
   	<servlet-name>demo</servlet-name>
@@ -57,5 +57,20 @@
   	<param-name>size</param-name>
   	<param-value>10</param-value>
   </context-param>
+  
+   <servlet>
+  	<servlet-name>init</servlet-name>
+  	<servlet-class>web.InitServlet</servlet-class>
+  	<load-on-startup>1</load-on-startup>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>upsalary</servlet-name>
+  	<servlet-class>web.upSalary</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>upsalary</servlet-name>
+  	<url-pattern>/upsalary</url-pattern>
+  </servlet-mapping>
   
 </web-app>

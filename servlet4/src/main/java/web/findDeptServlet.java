@@ -15,7 +15,11 @@ public class findDeptServlet extends HttpServlet {
 		
 		ServletContext ctx=getServletContext();
 		String size=ctx.getInitParameter("size");
+		
+		Integer count=(Integer)ctx.getAttribute("count");
+		ctx.setAttribute("count", ++count);
 		System.out.println(size);
+		System.out.println(count);
 	}
 
 }
